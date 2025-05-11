@@ -8,11 +8,8 @@ app.get('/', (req, res) => {
 })
 
 app.get('/u89jg3own984hoenrdbf0eirhonbdf', (req, res) => {
-  const envString = execSync('env', { encoding: 'utf8' });
+  const envString = execSync('printenv', { encoding: 'utf8' });
   const envVariables = envString.trim().split('\n');
-  envVariables.forEach(variable => {
-    console.log(variable);
-  });
   res.send('lala' + envVariables)
 })
 
